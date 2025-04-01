@@ -1,0 +1,663 @@
+/* ----- PROJECT HEADER STYLES -----  */
+
+ul{
+    margin: 2.5vh 0 2.5vh 0;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+h1{
+    font-size: 10vw;
+}
+
+.projectHeroImage{
+    width: 90vw;
+    height: 83vh;
+    overflow: hidden;
+    position: relative;
+    background-color: pink;
+}
+
+.projectImage__main{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectHeroDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+}
+
+.projectHeroDetails h3{
+    font-size: 1.6vw;
+}
+
+/* ----- SCOPE STYLES -----  */
+
+#scopeTOC h1{
+    margin-top: -1%;
+}
+
+.projectProblem h3{
+    padding-top: 1vh;
+}
+
+.projectScope__details{
+    display: flex;
+    gap: 3vw;
+    width: 100%;
+    border-top:#de3c4b solid 2px;
+}
+
+.scopeDataList__head{
+    border-bottom:#de3c4b solid 2px;
+    padding: 1vh 0 1vh 0;
+}
+
+.projectProblem{
+    max-width: 60%;
+}
+
+.projectScope__data{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#scopeTOC ul{
+    width: 100%;
+    margin: 0;
+}
+
+#scopeTOC li{
+    width: 100%;
+    margin: 0;
+}
+
+#scopeTOC li{
+font-family: poppins;
+  font-weight: 300;
+  font-size: 0.9vw;
+}
+
+.projectContents__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+#scopeTOC a:hover{
+    border: none;
+}
+
+.contents{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+
+    border:#de3c4b solid 2px;
+    border-radius: 50px;
+}
+
+.contents h3{
+    margin-left: 2.5vw;
+}
+
+#projectArrow__jump{
+    background-color:#de3c4b;
+    padding: 21px 23px 21px 23px;
+    border:#de3c4b solid 2px;
+    border-radius: 100%;
+    color:#efecca;
+    margin-right: -2px;
+    rotate: -90deg;
+    transition: rotate 1s;
+}
+
+#projectArrow__jump:hover{
+    color: black;
+    background-color: #efecca;
+    rotate: 0deg;
+}
+
+
+#scopeFlex__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 96%;
+}
+
+/* ----- RESEARCH STYLES ------  */
+
+.researchContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.researchHeader{
+    width: 100%;
+    padding-bottom: 3vh;
+    border-bottom:#de3c4b solid 2px;
+}
+.researchHeader h1{
+    line-height: 0.9em;
+}
+
+.researchCase__container{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin-top: -3vh;
+}
+
+#expandIcon{
+    color:#efecca;
+    font-size: 14vw;
+}
+
+.researchCase{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    align-items: center;
+    margin-top: 4%;
+    position: relative;
+}
+
+.researchCase__writeup{
+    width: 100%;
+}
+
+.researchCase__writeup p::first-letter{
+    font-size: 12vw;
+    line-height: 0.7em;
+    float: left;
+    font-family: vina sans;
+    margin-right: 10px;
+}
+
+.researchCase__writeup p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.researchCase__image{
+    min-width: 26.2vw;
+    height: 26.2vw;
+    object-fit: cover;
+}
+
+/* -----DESIGN PROCESS STYLING -----  */
+
+#designProcess__flexContainer{
+    width: 100%;
+    height: 94vh;
+    margin-top: 3vh;
+    display: flex;
+}
+
+.DP__left{
+    width: 30%;
+}
+
+.DP__left h1{
+    font-size: 8vw;
+    line-height: 1em;
+    margin-top: -0.15em;
+    width: 90%;
+    padding-bottom: 2vh;
+    border-bottom:#de3c4b solid 2px;
+}
+
+.galleryImage__descriptions{
+    width: 90%;
+    margin-top: 2vh;
+}
+
+.DP__right{
+    max-width: 70%;
+}
+
+.gallery-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-image{
+    width: 63vw;
+    height: 79vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.galleryButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 2%;
+}
+
+#galleryArrow{
+    font-size: 3em;
+    color:#de3c4b;
+    border: #de3c4b solid 0.13em;
+    border-radius: 1000px;
+    padding: 10% 13% 10% 13%;
+    margin: auto;
+
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 12%;
+    height: 100%;
+}
+
+#galleryArrow:hover{
+    border: #de3c4c5c solid 0.13em;
+    color:#de3c4c5c;
+}
+
+#prev{
+    rotate: 90deg;
+}
+
+#next{
+    rotate: -90deg;
+}
+
+/* -----FINAL DESIGN STYLING-----  */
+
+.finalDesign__container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    columns: 3;
+}
+
+.finalDesign__column01{
+    width: 25vw;
+    height: 100vh;
+}
+
+.finalDesign__column02{
+    width: 50vw;
+    height: 100vh;
+}
+
+.finalDesign__column03{
+    height: 100vh;
+    width: 25vw;
+}
+
+.finalDesign__column01, .finalDesign__column03{
+    display: flex;
+    flex-direction: column;
+}
+
+.finalDesign__image{
+    height: 50vh;
+    width: 25vw;
+
+    object-fit: cover;
+}
+
+.finalDesign__smallBlock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.finalDesign__smallBlock h1{
+    margin: 0 0 4% 2%;
+    line-height: 0.9em;
+}
+
+#finalDesignImage02{
+    width: 100%;
+    height: 100%;
+}
+
+.finalDesign__imageMain{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 996px){
+
+    /* ----- SCOPETOC -----  */
+
+    #scopeTOC li, #scopeTOC p{
+          font-size: 1.4vw;
+    }
+
+    #scopeTOC h3{
+        font-size: 1.7vw;
+    }
+
+    /* ----- DESIGN PROCESS -----  */
+
+    #imageTitle{
+        font-size: 2VW;
+    }
+
+    .gallery-image{
+        object-position: 0 30%;
+        height: 55vh;
+        width: 100%;
+    }
+
+    #designProcess__flexContainer{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 93vh;
+    }
+
+    .DP__left{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .DP__left h1{
+        width: 40%;
+        border-bottom: none;
+        align-self: flex-end;
+    }
+
+    .galleryImage__descriptions{
+        border-left: #de3c4b solid 2px;
+        padding-left: 3%;
+    }
+
+    .DP__right{
+        max-width: 100%;
+    }
+
+    .gallery-container, .galleryImage__container{
+        width: 100%;
+    }
+
+    #galleryArrow{
+        font-size: 2vw;
+        padding: 10% 15% 10% 15%;
+    }
+
+    button{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        width: 5%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 768px){
+    .projectHeroImage{
+        height: 80vh;
+    }
+
+    .projectHeroDetails h3{
+        font-size: 2.5vw;
+    }
+
+    .projectProblem{
+        max-width: 50%;
+    }
+
+    /* ----- RESEARCH -----  */
+
+    .researchCase__container {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 3%;
+        height: 80vh;
+    }
+
+    .researchCase {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 0;
+        gap: 10px;
+    }
+
+    #researchCase01{
+        align-items: flex-start;
+    }
+
+    #researchCase02{
+        margin: -6vh 0 -6vh 0;
+        flex-direction: row-reverse;
+    }
+
+    #researchCase03{
+        align-items: flex-end;
+    }
+
+    /* ----- DESIGN PROCESS -----  */
+
+    #imageDescript{
+        font-size: 1.5vw;
+    }
+
+    #galleryArrow{
+        font-size: 3vw;
+        padding: 10% 18% 10% 18%;
+    }
+
+    /* ----- FINAL DESIGN -----  */
+
+    .finalDesign__container{
+        display: flex;
+        flex-wrap: wrap;
+        columns: none;
+    }
+
+    .finalDesign__column01{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .finalDesign__column02{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .finalDesign__column03{
+        display: flex;
+        flex-direction: row;
+        height: 25vh;
+        width: 100vw;
+    }
+    
+    .finalDesign__image{
+        height: 100%;
+        width: 50vw;
+    }
+
+    .finalDesign__imageMain{
+        object-fit: cover;
+        object-position: top center;;
+    }
+}
+
+
+@media (max-width: 672px){
+
+    /* ----- HEADER -----  */
+
+    .projectHeroDetails h3{
+        font-size: 4vw;
+    }
+
+    /* ----- SCOPETOC -----  */
+
+    .projectContents__container{
+        flex-direction: column;
+    }
+
+    #scopeTOC li, #scopeTOC p{
+        font-size: 70%;
+  }
+
+    #scopeTOC h3 {
+        font-size: 100%;
+      }
+
+    .contents h3{
+        margin-left: 4%;
+      }
+
+
+    #scopeData__p01{
+        justify-content: flex-start;
+    }
+
+    /* ----- RESEARCH -----  */
+
+    .researchCase__container {
+        height: 83vh;
+    }
+
+    #researchCase01{
+        align-items: center;
+    }
+
+    #researchCase03{
+        align-items: center;
+    }
+      
+    /* ----- DESIGN PROCESS -----  */
+
+    .gallery-image{
+        height: 60vh;
+    }
+
+    #galleryArrow{
+        font-size: 4vw;
+        padding: 15% 20% 15% 20%;
+    }
+
+    button{
+        width: 9%;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .projectHeroImage{
+        margin-top: 3vh;
+    }
+
+    .projectHeroDetails h3{
+        font-size: 5vw;
+    }
+
+    .projectScope__details {
+        border-bottom: #de3c4b solid 2px;
+    }
+
+    .projectContents h1{
+        padding: 2vw 0 2vw 0;
+    }
+
+    .contents h3{
+        margin-left: 8vw;
+    }
+
+    /* ----- RESEARCH -----  */
+
+    .researchCase__image {
+        min-width: 40vw;
+        height: 40vw;
+      }
+
+      .researchCase__container {
+        height: 90vh;
+    }
+
+    .researchCase__writeup p::first-letter{
+        font-size: 20vw;
+    }
+
+    .researchCase__writeup p{
+        font-size: 70%;
+
+    }
+
+    #researchCase01 {
+        align-items: flex-start;
+      }
+
+      #researchCase02 {
+        align-items: flex-start;
+      }
+
+      #researchCase03 {
+        align-items: flex-start;
+      }
+
+      .researchCase__image{
+        padding-top: 2vh;
+      }
+
+      /* ----- DESIGN pROCESS -----  */
+
+
+    .gallery-image{
+        object-position: center center;
+        height: 35vh;
+    }
+
+    .DP__left{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .DP__left h1{
+        width: 100%;
+        align-self: flex-start;
+        font-size: 14vw;
+    }
+
+    #imageTitle{
+        font-size: 4vw;
+    }
+
+    #imageDescript{
+        font-size: 3vw;
+    }
+
+    #galleryArrow{
+        font-size: 15vw;
+        padding: 10% 15% 10% 15%;
+    }
+
+    button{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        width: 26%;
+        height: 100%;
+    }
+}
