@@ -30,6 +30,67 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+const arrowDown = document.getElementById("arrowIcon");
+
+// document.addEventListener("scroll", function()
+// {
+//     arrowDown.style.setProperty('animation', 'arrowFall 1s');
+
+//     setTimeout(() => {
+//         arrowDown.style.display = "none";
+//       }, 1000);
+// });
+
+function resetAnimation(){
+    if (window.scrollY === 0) {
+
+        clearTimeout(hideArrow);
+
+        arrowDown.style.animation = 'none';
+    
+        void arrowDown.offsetWidth;
+
+        arrowDown.style.animation = 'arrowDrop 2s, arrowBounce 2s linear 2s infinite';
+
+        
+        setTimeout(() => {
+            arrowDown.style.opacity = "1";
+          }, 200);
+
+
+    } else {
+        arrowDown.style.setProperty('animation', 'arrowFall 1s');
+
+        hideArrow = setTimeout(() => {
+            arrowDown.style.opacity = "0";
+          }, 200);
+    }
+}
+
+document.addEventListener('scroll', resetAnimation);
+
+// document.addEventListener('scroll', () => {
+//     if (window.scrollY <= 100 ) {
+      
+//       arrowDown.style.display = "block";
+
+//       arrowDown.style.removeProperty('animate');
+      
+//             void arrowDown.offsetWidth;
+      
+//             arrowDown.style.animate = 'arrowDrop 2s, arrowBounce 2s';
+
+//             console.log('User is at the top of the page');
+
+//     } if(window.scrollY >= 100) {
+//         arrowDown.style.setProperty('animation', 'arrowFall 1s');
+
+//         setTimeout(() => {
+//             arrowDown.style.display = "none";
+//           }, 1000);
+//     }
+//   });
+
 const imageFilenames = [
     "01galleryImage.jpg",
     "02galleryImage.jpg",
@@ -57,14 +118,12 @@ const basePath = "images/sobonWebsite/galleryImages/";
 
 let currentIndex = 0;
 
-// Get elements
 const galleryImage = document.getElementById("gallery-image");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 const imageTitle = document.getElementById("imageTitle");
 const imageDescription = document.getElementById("imageDescript");
 
-// Function to update the image
 function updateImage() {
     const imagePath = basePath + imageFilenames[currentIndex];
     galleryImage.src = imagePath;
@@ -74,17 +133,18 @@ function updateImage() {
 
 }
 
-// Function to go to the previous image
 prevButton.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + imageFilenames.length) % imageFilenames.length;
     updateImage();
 });
 
-// Function to go to the next image
 nextButton.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % imageFilenames.length;
     updateImage();
 });
 
-// Initial image setup
 updateImage();
+
+// ---- SCROLLING -----
+
+

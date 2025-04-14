@@ -763,7 +763,11 @@ footer {
 @media (max-width: 400px) /*For Screens <400px */ {
   /* -----NAV MOBILE STYLES 400PX------ */
 
-  #nav-web {
+  body,
+html {
+  scroll-snap-type: none;
+}
+#nav-web {
     display: none;
   }
 
@@ -794,6 +798,7 @@ footer {
     margin-top: 12px;
     padding-top: 10px;
     border-top: black solid 3px;
+    background-color:#f4eee4;
     width: 0vw;
     overflow: hidden;
     transition: width 1s;
@@ -815,11 +820,11 @@ footer {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #nav-mobile__logo {
-    margin-right: 7%;
+    margin-left: 10px;
   }
 
   #nav-mobile__logo a {
@@ -835,28 +840,59 @@ footer {
 
   /* -----HEADER STYLES 400PX----- */
 
+  .extraLargeHeaders{
+    font-size: 30vw;
+  }
+  
   #heroHeader {
     z-index: 100;
-    margin-bottom: 13vh;
+    margin-bottom: 15vh;
   }
 
   #arrowIcon {
-    top: 38vh;
-    right: -17vw;
-    font-size: 7em;
+    top: 45vh;
+    right: 10px;
+    font-size: 3em;
     border-radius: 100%;
-    padding: 9% 15% 9% 15%;
-    animation: arrowDrop;
-    animation-duration: 2s;
+    padding: 3% 5% 3% 5%;
+    animation: arrowDrop 2s, arrowBounce 2s  linear 2s infinite;
+    display: block;
+    opacity:1;
   }
 
   @keyframes arrowDrop {
-    from {
+    0% {
       top: -40%;
     }
 
-    top {
-      top: 100%;
+    100% {
+      top: 50%;
+    }
+  }
+
+  @keyframes arrowBounce {
+
+    0% {
+      top: 50%;
+    }
+
+    50% {
+      top: 45%;
+    }
+
+    100% {
+      top: 50%;
+    }
+
+  }
+
+  @keyframes arrowFall {
+    0% {
+      top:45%
+    }
+
+    100% {
+      top: 200%;
     }
   }
 
@@ -871,49 +907,154 @@ footer {
 
   /* -----ABOUT ME STYLES----- */
 
+  #aboutMe__mobile{
+    height: 190vh;
+  } 
+
+  #profilePicture {
+    min-width: 40vh;
+    height: 40vh;
+    border:#f4eee4 2px solid;
+    border-radius: 100%;
+    overflow: hidden;
+    filter: drop-shadow(7px 7px 0px #000000);
+  }
+
+  #portrait {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    text-align: center;
+  }
+
   #aboutMe__header {
     display: flex;
-    margin-right: -5.5vw;
   }
 
   #aboutMe__header h1 {
     font-size: 29vw;
-  }
-
-  #aboutMe__container {
-    grid-template-rows: 24vh 55vh 15vh;
-  }
-
-  #aboutMe__topRight {
-    margin-right: -5.5vw;
-  }
-
-  #aboutMe__headerMOBILE {
     display: none;
   }
 
+  #aboutMe__container {
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    width: 93%;
+  }
+
+  #aboutMe__greeting{
+    order: 2;
+    margin-top: 10px;
+  }
+
+  #aboutMe__greeting p {
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-top: 0;
+    color: #f4eee4;
+    text-align: center;
+  }
+
+  #aboutMe__topRight {
+    order: 1;
+    width: 100%;
+    margin: auto;
+  }
+
+  #aboutMe__topLeft{
+    order: 3;
+    margin-top: 40px;
+  }
+
+  #aboutMe__headerMOBILE h1{
+    text-align: center;
+    font-size: 15vw;
+    color:#f4eee4;
+    text-shadow: 3px 3px 0px #000000;
+    margin-top: 20px;
+  }
+
+  .resumeInfoTop__container{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .skillContainer{
+    width: 30%;
+  }
+
+  .skillIcon{
+    width: 3em;
+  }
+
   h2 {
-    font-size: 4.5vw;
+    font-size: 8vw;
   }
 
   h3 {
-    font-size: 1.9vw;
+    font-size: 3vw;
   }
 
   p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   /* -----PROJECT STYLES----- */
 
+  section{
+    height: auto;
+  }
+
+  .projectSummary{
+    flex-direction: column-reverse;
+    height: 80vh;
+  }
+  
+  .projectImage{
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+  }
+
+  .projectImage__container{
+    height: 50vh;
+  }
+  
   #project01ArrowIcon {
-    /* bottom: 5.5vw;
-    right: 2.5vw; */
     font-size: 3em;
     padding: 15px 20px 15px 20px;
   }
 
+  #projectSummary__02, #projectSummary__04 {
+    flex-direction: column-reverse;
+  }
+
   /* -----FOOTER STYLES-----  */
+  #footer{
+    height: 100vh;
+  }
+
+  #footerArrowIcon{
+    animation: footerArrowBounce 2s infinite;
+  }
+
+  @keyframes footerArrowBounce {
+
+    0% {
+      bottom: 25px;
+    }
+
+    50% {
+      bottom: 40px;
+    }
+
+    100% {
+      bottom: 25px;
+    }
+
+  }
+
   #footerContainer {
     display: flex;
     justify-content: space-around;
